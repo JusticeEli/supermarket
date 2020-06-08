@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="15dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="20dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="125dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Login"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/loginTxtView"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="15sp"
+        android:layout_below="@+id/loginTxtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailEdtTxt"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="15sp"
+        android:layout_below="@+id/emailEdtTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/passwordEdtTxt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passwordEdtTxt"
+
+        android:text="Forgot Password"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:id="@+id/forgotPasswordTxtView"/>
+
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

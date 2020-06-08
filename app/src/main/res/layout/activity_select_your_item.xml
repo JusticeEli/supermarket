@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectYourItemActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Your Item"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"
+        android:id="@+id/selectYourItemTxtView"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:textSize="15sp"
+        android:layout_below="@+id/selectYourItemTxtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/searchEdtTxt"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchEdtTxt"
+        android:layout_marginTop="8dp"
+        android:id="@+id/recyclerView">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
